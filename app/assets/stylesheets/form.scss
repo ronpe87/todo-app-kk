@@ -1,6 +1,6 @@
 input {
-  &.text {
-    
+  &.text1 {
+    position: absolute;
     width: 362px;
     height: 40px;
     left: 26px;
@@ -9,10 +9,54 @@ input {
     background: #F4F4F4;
     border-radius: 10px;
   }
+  &.text2 {
+    position: absolute;
+    width: 362px;
+    height: 40px;
+    left: 26px;
+    top: 295px;
+
+    background: #F4F4F4;
+    border-radius: 10px;
+  }
+
+  &.text3 {
+    position: absolute;
+    width: 362px;
+    height: 40px;
+    left: 26px;
+    top: 385px;
+
+    background: #F4F4F4;
+    border-radius: 10px;
+  }
 }
 
 label {
-  font-size: 12px;
+  height: 25px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #000000;
+  &.label1 {
+    position: absolute;
+    width: 44px;
+    top: 161px;
+  }
+  &.label2 {
+    position: absolute;
+    width: 76px;
+    top: 263px;
+  }
+  &.label3 {
+    position: absolute;
+    width: 186px;
+    top: 351px;
+  }
 }
 
 textarea {
@@ -23,3 +67,26 @@ textarea {
   resize: vertical;
   border: 1px solid #EBEBEB;
 }
+
+h2 {
+  position: absolute;
+  height: 36px;
+  left: 26px;
+  right: 49.73%;
+  top: 92px;
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #000000;
+}
+em {
+    position: absolute;
+    width: 1000px;
+    top: 263px;
+    left: 107px;
+  }
