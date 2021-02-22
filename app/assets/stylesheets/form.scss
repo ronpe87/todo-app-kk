@@ -44,7 +44,7 @@ label {
   color: #000000;
   &.label1 {
     position: absolute;
-    width: 44px;
+    width: 100px;
     top: 161px;
   }
   &.label2 {
@@ -60,12 +60,14 @@ label {
 }
 
 textarea {
-  width: 100%;
-  margin: 8px 0px;
-  padding: 8px 8px;
-  min-height: 440px;
-  resize: vertical;
-  border: 1px solid #EBEBEB;
+  position: absolute;
+  width: 362px;
+  height: 203px;
+  left: 26px;
+  top: 296px;
+
+  background: #F4F4F4;
+  border-radius: 10px;
 }
 
 h2 {
