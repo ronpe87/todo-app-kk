@@ -3,4 +3,9 @@
   .board_detail
   .board_content
     = @board.content
+  .board_detail_actions
+  .dropdown
+    = image_tag 'actions.svg', class: 'dropbtn'
+    .dropdown-content.mini
+      = link_to '編集する', edit_board_path(@board)
   .board_heart

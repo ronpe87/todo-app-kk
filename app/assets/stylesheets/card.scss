@@ -30,7 +30,7 @@ $avatar-size: 32px;
         left: 17px;
         right: 42px;
         top: 63px;
-
+        position: relative;
         font-family: Avenir;
         font-style: normal;
         font-weight: normal;
@@ -41,5 +41,9 @@ $avatar-size: 32px;
 
         mix-blend-mode: normal;
         opacity: 0.4;
+        &_actions {
+          right: 0px;
+          position: absolute;
+        }
       }
     }
