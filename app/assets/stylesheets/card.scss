@@ -2,47 +2,44 @@
 $heart-size: 16px;
 $avatar-size: 32px;
 
-  .card {
-    position: absolute;
-    width: 362px;
-    height: 161px;
-    top: 161px;
-    left: 30px;
-    margin-bottom: 26px;
-    background: #F4F4F4;
-    border-radius: 10px;
-
-    &_title {
+    .card {
       position: absolute;
-      height: 25px;
-      left: 17px;
-      top: 32px;
+      width: 362px;
+      height: 161px;
+      margin-bottom: 24px;
+      background: #F4F4F4;
+      border-radius: 10px;
 
-      font-family: Avenir;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 25px;
-      color: #000000;
+      &_title {
+        position: absolute;
+        height: 25px;
+        left: 17px;
+        top: 32px;
+
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+      }
+
+      &_detail {
+        position: absolute;
+        height: 19px;
+        left: 17px;
+        right: 42px;
+        top: 63px;
+
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #000000;
+
+        mix-blend-mode: normal;
+        opacity: 0.4;
+      }
     }
-
-    &_detail {
-      position: absolute;
-      height: 19px;
-      left: 17px;
-      right: 42px;
-      top: 63px;
-
-      font-family: Avenir;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
-
-      color: #000000;
-
-      mix-blend-mode: normal;
-      opacity: 0.4;
-    }
-  }
-
