@@ -1,13 +1,7 @@
 .container
   %h2 All Boards
   - @boards.each do |board|
-    = link_to board_path(board) do
-      .card
-        .card_content
-          .card_title
-            = board.title
-          .card_detail
-            = board.content
-    = link_to new_board_path do
-      .float_btn
-        %i.fa.fa-plus Add new board
+    = render 'board', board: board
+  = link_to new_board_path do
+    .float_btn
+      %i.fa.fa-plus Add new board
