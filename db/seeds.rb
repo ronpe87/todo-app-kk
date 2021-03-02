@@ -5,6 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-Board.create({title: 'aaaa', content: 'abcdefg', limit:'2020-11-11'})
-Board.create({title: 'bbbb', content: 'kfsvfvjnkfns', limit:'2021-10-10'})
