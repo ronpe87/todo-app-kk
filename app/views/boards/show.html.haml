@@ -3,6 +3,9 @@
   .board_detail
   .board_content
     = @board.content
+    %div
+      %p= @article.author_name
+  - if user_signed_in? && current_user.has_written?(@article)
   .board_detail_actions
   .dropdown
     = image_tag 'actions.svg', class: 'dropbtn'

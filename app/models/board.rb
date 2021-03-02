@@ -4,3 +4,7 @@ class Board < ApplicationRecord
 
   belongs_to :user
 end
+
+def author_name
+  user.display_name
+end
