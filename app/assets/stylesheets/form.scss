@@ -1,34 +1,21 @@
 input {
+  width: 362px;
+  height: 40px;
+  left: 26px;
+  background: #F4F4F4;
+  border-radius: 10px;
   &.text1 {
     position: absolute;
-    width: 362px;
-    height: 40px;
-    left: 26px;
-    top: 190px;
-
-    background: #F4F4F4;
-    border-radius: 10px;
+    top: 131px;
   }
   &.text2 {
     position: absolute;
-    width: 362px;
-    height: 40px;
-    left: 26px;
-    top: 295px;
-
-    background: #F4F4F4;
-    border-radius: 10px;
+    top: 236px;
   }
 
   &.text3 {
     position: absolute;
-    width: 362px;
-    height: 40px;
-    left: 26px;
-    top: 385px;
-
-    background: #F4F4F4;
-    border-radius: 10px;
+    top: 326px;
   }
 }
 
@@ -39,43 +26,31 @@ label {
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
+  left: 26px;
+  width: 100%;
   /* identical to box height */
 
   color: #000000;
   &.label1 {
     position: absolute;
-    width: 100px;
-    top: 161px;
+    top: 102px;
   }
   &.label2 {
     position: absolute;
-    width: 76px;
-    top: 263px;
+    top: 204px;
   }
   &.label3 {
     position: absolute;
-    width: 186px;
-    top: 351px;
+    top: 292px;
   }
 }
 
-textarea {
-  position: absolute;
-  width: 362px;
-  height: 203px;
-  left: 26px;
-  top: 296px;
-
-  background: #F4F4F4;
-  border-radius: 10px;
-}
-
-h2 {
+.Page_title {
   position: absolute;
   height: 36px;
-  left: 26px;
+  left: 30px;
   right: 49.73%;
-  top: 92px;
+  top: 31px;
   margin-bottom: 35px;
 
   font-family: Avenir;
@@ -90,6 +65,10 @@ h2 {
 em {
     position: absolute;
     width: 1000px;
-    top: 263px;
-    left: 107px;
+    top: 292px;
+    left: 220px;
   }
+.sign {
+  position: absolute;
+  top: 300px;
+}

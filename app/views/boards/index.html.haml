@@ -1,5 +1,5 @@
 .container
-  %h2 All Boards
+  %h2.Page_title All Boards
   - @boards.each do |board|
     = render 'board', board: board
   = link_to new_board_path do
