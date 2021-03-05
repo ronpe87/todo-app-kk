@@ -6,8 +6,8 @@ class User < ApplicationRecord
 
   has_many :boards, dependent: :destroy
 
-  def has_written?(article)
-    articles.exists?(id: article.id)
+  def has_written?(board)
+    boards.exists?(id: board.id)
   end
 
   def display_name

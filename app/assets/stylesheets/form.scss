@@ -4,10 +4,12 @@ input {
   left: 26px;
   background: #F4F4F4;
   border-radius: 10px;
+
   &.text1 {
     position: absolute;
     top: 131px;
   }
+
   &.text2 {
     position: absolute;
     top: 236px;
@@ -33,7 +35,7 @@ label {
   color: #000000;
   &.label1 {
     position: absolute;
-    top: 102px;
+    top: 100px;
   }
   &.label2 {
     position: absolute;
@@ -63,12 +65,21 @@ label {
   color: #000000;
 }
 em {
-    position: absolute;
-    width: 1000px;
-    top: 292px;
-    left: 220px;
-  }
+  position: absolute;
+  width: 1000px;
+  top: 292px;
+  left: 220px;
+}
 .sign {
   position: absolute;
   top: 300px;
+}
+textarea {
+  position: absolute;
+  width: 362px;
+  height: 203px;
+  top: 237px;
+  left: 26px;
+  background: #F4F4F4;
+  border-radius: 10px;
 }
