@@ -1,14 +1,15 @@
 @import './variables';
-$heart-size: 16px;
 $avatar-size: 32px;
 
     .card {
-      position: absolute;
+      position: relative;
       width: 362px;
       height: 161px;
       margin-bottom: 24px;
       background: #F4F4F4;
       border-radius: 10px;
+      left: 26px;
+      top: 102px;
 
       &_title {
         position: absolute;

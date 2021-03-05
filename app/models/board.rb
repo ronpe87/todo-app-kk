@@ -3,8 +3,8 @@ class Board < ApplicationRecord
   validates :content, presence: true
 
   belongs_to :user
-end
 
-def author_name
-  user.display_name
+  def author_name
+    user.display_name
+  end
 end

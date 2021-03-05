@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 2021_02_17_021140) do
     t.bigint "user_id", null: false
     t.string "title", null: false
     t.text "content", null: false
-    t.date "limit", null: false
     t.index ["user_id"], name: "index_boards_on_user_id"
   end
 
