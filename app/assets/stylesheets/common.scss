@@ -1,4 +1,4 @@
-@import 'variables';
+@import './variables';
 .dropbtn {
   border: none;
 }
@@ -6,11 +6,13 @@
 .dropdown {
   display: inline-block;
   position: absolute;
-  left: 352px;
-  top: 10px;
-  left: 352px;
 }
 
+.board3 {
+  position: absolute;
+  left: 300px;
+  top: 20px;
+}
 .dropdown-content {
   font-weight: normal;
   display: none;

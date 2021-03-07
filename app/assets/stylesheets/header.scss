@@ -7,7 +7,7 @@ $header-padding-y: 16px;
   position: relative;
   height: 58px;
   border-bottom: solid 1px #000000;
-  
+
   &_pageTitle {
     position: absolute;
     width: 56px;
@@ -26,9 +26,11 @@ $header-padding-y: 16px;
   }
 
   &_avatar {
+    position: absolute;
     width: 40px;
     height: 40px;
-
+    top: 10px;
+    left: 352px;
     background: url(Image.png);
   }
 
