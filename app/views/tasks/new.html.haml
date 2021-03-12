@@ -1,9 +1,9 @@
 .container
   %ul
-  - @board.errors.full_messages.each do |message|
+  - @task.errors.full_messages.each do |message|
     %li= message
-  %h2.Page_title New Board
-  = form_with(model: @board, url: boards_path, method: 'post', local: true) do |f|
+  %h2.Page_title New Task
+  = form_with(model: @task, url: board_tasks_path, method: 'post', local: true) do |f|
     %div
       = f.label :title, 'Name', class:'label1'
     %div

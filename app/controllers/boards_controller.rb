@@ -1,11 +1,7 @@
 class BoardsController < ApplicationController
-  before_action :set_board, only: [:show]
 
   def index
     @boards = Board.all
-  end
-
-  def show
   end
 
   def new
@@ -15,7 +11,7 @@ class BoardsController < ApplicationController
   def create
     @board = current_user.boards.build(board_params)
     if @board.save
-      redirect_to board_path(@board), notice: '保存しました'
+      redirect_to boards_path, notice: '保存しました'
     else
       flash.now[:error] = '保存に失敗しました'
       render :new
