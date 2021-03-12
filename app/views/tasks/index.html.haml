@@ -1,0 +1,5 @@
+.container
+  %h1.board_title= @board.title
+  = link_to new_board_task_path(@board) do
+    .btn-primary
+      Taskを追加
