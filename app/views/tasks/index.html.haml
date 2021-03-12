@@ -1,5 +1,7 @@
 .container
   %h1.board_title= @board.title
+  - @tasks.each do |task|
+    = render 'task', task: task
   = link_to new_board_task_path(@board) do
     .btn-primary
       Taskを追加
