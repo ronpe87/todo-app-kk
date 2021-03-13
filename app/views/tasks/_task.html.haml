@@ -1,10 +1,10 @@
 = link_to board_task_path(@board,task.id) do
-  .card
+  .task
     - if task.eyecatch.attached?
-      .card_image
+      .task_image
         = image_tag task.eyecatch
-    .card_content
-      .card_title
+    .task_content
+      .task_title
         = task.title
-      .card_detail
+      .task_detail
         = task.content

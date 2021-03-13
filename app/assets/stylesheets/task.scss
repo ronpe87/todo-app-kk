@@ -1,21 +1,16 @@
 @import './variables';
 $avatar-size: 32px;
 
-.card {
-  position: relative;
-  width: 362px;
-  height: 185px;
-  margin-bottom: 24px;
+.task {
   background: #F4F4F4;
+  margin: 24px 0;
+  cursor: pointer;
   border-radius: 10px;
-  left: 26px;
-  top: 102px;
+  padding: 16px 16px;
 
   &_title {
-    position: absolute;
-    height: 25px;
-    left: 17px;
-    top: 32px;
+    margin-bottom: 10px;
+    overflow: hidden;
 
     font-family: Avenir;
     font-style: normal;
@@ -26,25 +21,27 @@ $avatar-size: 32px;
   }
 
   &_detail {
-    position: absolute;
-    height: 19px;
-    left: 17px;
-    right: 42px;
-    top: 63px;
-    position: relative;
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 30px;
 
     color: #000000;
 
     mix-blend-mode: normal;
     opacity: 0.4;
-    &_actions {
-      right: 0px;
-      position: absolute;
+  }
+  &_image {
+    overflow: hidden;
+    margin-bottom: 30px;
+    text-align: center;
+    background: url(Image.png);
+    img {
+      width: 100%;
+      height: 170px;
+      border-radius: 8px;
     }
   }
 }
