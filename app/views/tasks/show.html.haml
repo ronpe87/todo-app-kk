@@ -1,0 +1,8 @@
+.container
+  .task_show
+    %h1.task_show_title= @task.title
+    .task_image
+      = image_tag @task.eyecatch
+    .task
+      .task_detail
+        = @task.content

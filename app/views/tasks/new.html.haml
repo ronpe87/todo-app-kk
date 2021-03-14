@@ -1,7 +1,7 @@
 .container
   %ul
-  - @task.errors.full_messages.each do |message|
-    %li= message
+    - @task.errors.full_messages.each do |message|
+      %li= message
   %h2.Page_title New Task
   = form_with(model: @task, url: board_tasks_path, method: 'post', local: true) do |f|
     %div
@@ -12,4 +12,8 @@
       = f.label :content, 'Description', class:'label2'
     %div
       = f.text_area :content
+    %div
+      = f.label :eyecatch, 'image', class:'label4'
+    %div
+      = f.file_field :eyecatch, class:'text4'
     = f.submit 'Submit', class: 'btn-primary'
