@@ -1,25 +1,21 @@
 input {
-  width: 362px;
-  height: 40px;
-  left: 26px;
-  background: #F4F4F4;
-  border-radius: 10px;
-
   &.text1 {
     position: absolute;
     top: 131px;
+    width: 362px;
+    height: 40px;
+    left: 26px;
+    background: #F4F4F4;
+    border-radius: 10px;
   }
-
   &.text2 {
     position: absolute;
     top: 236px;
   }
-
   &.text3 {
     position: absolute;
     top: 326px;
   }
-
 }
 
 label {
@@ -46,7 +42,6 @@ label {
     position: absolute;
     top: 292px;
   }
-
 }
 .label4 {
   position: absolute;

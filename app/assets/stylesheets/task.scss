@@ -27,15 +27,15 @@ $avatar-size: 32px;
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 30px;
-
+    text-overflow: ellipsis;
     color: #000000;
+    word-wrap: break-word;
 
     mix-blend-mode: normal;
     opacity: 0.4;
   }
   &_image {
     overflow: hidden;
-    margin-bottom: 30px;
     text-align: center;
     background: url(Image.png);
     img {
@@ -44,4 +44,14 @@ $avatar-size: 32px;
       border-radius: 8px;
     }
   }
+}
+.task_index {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.task_show_title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
