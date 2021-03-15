@@ -11,7 +11,31 @@ class TasksController < ApplicationController
   end
 
   def show
+    @board = Board.find(params[:board_id])
     @task = Task.find(params[:id])
+  end
+
+  def edit
+    @board = Board.find(params[:board_id])
+    @task = @board.tasks.find(params[:id])
+  end
+
+  def update
+    board = Board.find(params[:board_id])
+    @task = board.tasks.find(params[:id])
+    if @task.update(task_params)
+      redirect_to board_tasks_path(board), notice: '更新できました。'
+    else
+      flash.now[:error] = '更新できませんでした'
+      render :edit
+    end
+  end
+
+  def destroy
+    board = Board.find(params[:board_id])
+    task = board.tasks.find(params[:id])
+    task.destroy!
+    redirect_to board_tasks_path(board), notice: '削除しました'
   end
 
   def create
