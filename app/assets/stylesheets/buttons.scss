@@ -39,3 +39,30 @@
     color: #000000;
   }
 }
+.btn-secondary {
+  position: relative;
+  width: 362px;
+  height: 57px;
+  margin-top: 32px;
+  background: #FFFFFF;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  i {
+    position: absolute;
+    height: 25px;
+    left: 0.35%;
+    right: 0.35%;
+    top: calc(50% - 25px/2);
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #000000;
+  }
+}

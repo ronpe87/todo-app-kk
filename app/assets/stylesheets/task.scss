@@ -55,3 +55,18 @@ $avatar-size: 32px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.task_comment {
+  position: relative;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 57px;
+  &_content {
+    position: absolute;
+    left: 80px;
+    top: 0px;
+    text-overflow: ellipsis;
+  }
+}
+.comment_title {
+  margin-bottom: 25px;
+}

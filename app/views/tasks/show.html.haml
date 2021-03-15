@@ -11,3 +11,14 @@
       .dropdown-content.mini.d2
         = link_to '編集する', edit_board_task_path(@board,@task)
         = link_to '削除する', board_task_path(@board,@task), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？' }
+    %h2.comment_title Comment
+    - @comments.each do |comment|
+      .task_comment
+        .task_comment_image
+          = image_tag 'Oval.png'
+        .task_comment_content
+          = comment.content
+
+  = link_to new_board_task_comment_path(@board,@task) do
+    .btn-secondary
+      %i.fa.fa-plus Add new comment
