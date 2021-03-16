@@ -54,4 +54,24 @@ $avatar-size: 32px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 310px;
+}
+.task_comment {
+  position: relative;
+  margin-bottom: 30px;
+  height: 57px;
+  &_content {
+    position: absolute;
+    width: 298px;
+    height: 57px;
+    left: 50px;
+    top: 0px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.comment_title {
+  margin-bottom: 25px;
 }
