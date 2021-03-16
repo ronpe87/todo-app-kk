@@ -80,11 +80,18 @@ em {
   top: 300px;
 }
 textarea {
-  position: absolute;
   width: 362px;
   height: 203px;
-  top: 237px;
-  left: 26px;
   background: #F4F4F4;
   border-radius: 10px;
+}
+.comment_area {
+  position: absolute;
+  top: 102px;
+  left: 26px;
+}
+.board_task_area {
+  position: absolute;
+  top: 237px;
+  left: 26px;
 }

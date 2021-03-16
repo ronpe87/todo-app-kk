@@ -4,8 +4,8 @@
       %li= message
 
   = form_with(model: @comment, url: board_task_comments_path(@board, @task), local: true) do |f|
-    %div
-      = f.label :content, '内容'
-    %div
+    %div.Page_title
+      = f.label :content, 'New Comment'
+    %div.comment_area
       = f.text_area :content
     = f.submit 'submit', class: 'btn-primary'
