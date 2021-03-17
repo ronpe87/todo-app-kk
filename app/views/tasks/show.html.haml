@@ -1,14 +1,15 @@
 .container
   .task_show
-    %h1.task_show_title= @task.title
+    %h1= @task.title
     .task_image
       = image_tag @task.eyecatch
     .task
       .task_detail
         = @task.content
-    .dropdown.taskbtn
+  - if user_signed_in?
+    .dropdown.d2
       = image_tag 'actions.svg', class: 'dropbtn'
-      .dropdown-content.mini.d2
+      .dropdown-content.mini
         = link_to '編集する', edit_board_task_path(@board,@task)
         = link_to '削除する', board_task_path(@board,@task), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？' }
     %h2.comment_title Comment

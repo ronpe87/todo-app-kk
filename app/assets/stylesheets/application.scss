@@ -36,14 +36,19 @@ body {
 .container {
   position: relative;
   padding: 16px 30px 24px;
-  width: 414px;
+  width: 100%;
   background: #FFFFFF;
+  
   h1 {
+    width: 300px;
     font-weight: 800;
     font-size: 26px;
     line-height: 36px;
-    left: 26px;
     color: #000000;
-    margin-bottom: 30px;
+    margin: 16px 0px 36px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }

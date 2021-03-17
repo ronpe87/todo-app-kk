@@ -1,97 +1,37 @@
 input {
-  &.text1 {
-    position: absolute;
-    top: 131px;
-    width: 362px;
-    height: 40px;
-    left: 26px;
+  &.text {
+    width: 100%;
+    padding: 16px 24px;
+    margin: 8px 0px 30px;
     background: #F4F4F4;
     border-radius: 10px;
   }
-  &.text2 {
-    position: absolute;
-    top: 236px;
-  }
-  &.text3 {
-    position: absolute;
-    top: 326px;
+  &.eyecatch {
+    margin: 10px 0;
+    border: 1px solid  rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
   }
 }
 
 label {
-  height: 25px;
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  left: 26px;
-  width: 100%;
   /* identical to box height */
 
   color: #000000;
-  &.label1 {
-    position: absolute;
-    top: 100px;
-  }
-  &.label2 {
-    position: absolute;
-    top: 204px;
-  }
-  &.label3 {
-    position: absolute;
-    top: 292px;
-  }
-}
-.label4 {
-  position: absolute;
-  top: 450px;
-}
-.text4 {
-  position: absolute;
-  top: 480px;
-}
-
-.Page_title {
-  position: absolute;
-  height: 36px;
-  left: 30px;
-  right: 49.73%;
-  top: 31px;
-  margin-bottom: 35px;
-
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 36px;
-  /* identical to box height */
-
-  color: #000000;
-}
-em {
-  position: absolute;
-  width: 1000px;
-  top: 292px;
-  left: 220px;
 }
 .sign {
   position: absolute;
-  top: 300px;
+  top: 350px;
 }
 textarea {
-  width: 362px;
+  width: 100%;
   height: 203px;
+  padding: 16px 24px;
+  margin: 8px 0px 30px;
   background: #F4F4F4;
   border-radius: 10px;
-}
-.comment_area {
-  position: absolute;
-  top: 102px;
-  left: 26px;
-}
-.board_task_area {
-  position: absolute;
-  top: 237px;
-  left: 26px;
 }

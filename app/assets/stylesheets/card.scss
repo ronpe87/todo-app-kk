@@ -3,41 +3,42 @@ $avatar-size: 32px;
 
 .card {
   position: relative;
-  width: 362px;
+  margin-bottom: 26px;
   height: 185px;
-  margin-bottom: 24px;
   background: #F4F4F4;
   border-radius: 10px;
-  left: 26px;
-  top: 102px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
 
   &_title {
     position: absolute;
+    width: 240px;
     height: 25px;
     left: 17px;
     top: 32px;
 
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     color: #000000;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &_detail {
     position: absolute;
-    height: 19px;
-    left: 17px;
-    right: 42px;
+    padding: 6px 17px;
     top: 63px;
     position: relative;
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 14px;
     line-height: 19px;
-
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     color: #000000;
 
     mix-blend-mode: normal;
@@ -46,5 +47,11 @@ $avatar-size: 32px;
       right: 0px;
       position: absolute;
     }
+  }
+
+  &_author {
+    position: absolute;
+    top: 111px;
+    left: 20px;
   }
 }
