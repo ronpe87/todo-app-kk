@@ -7,26 +7,30 @@ $avatar-size: 32px;
   cursor: pointer;
   border-radius: 10px;
   padding: 16px 16px;
-
+  margin-bottom: 26px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
   &_title {
     margin-bottom: 10px;
     overflow: hidden;
 
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     color: #000000;
   }
 
+  &_con {
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   &_detail {
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-overflow: ellipsis;
     color: #000000;
     word-wrap: break-word;
@@ -34,6 +38,7 @@ $avatar-size: 32px;
     mix-blend-mode: normal;
     opacity: 0.4;
   }
+
   &_image {
     overflow: hidden;
     text-align: center;
@@ -50,26 +55,21 @@ $avatar-size: 32px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.task_show_title {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 310px;
-}
+
 .task_comment {
   position: relative;
   margin-bottom: 30px;
-  height: 57px;
   &_content {
     position: absolute;
-    width: 298px;
+    width: 260px;
     height: 57px;
     left: 50px;
     top: 0px;
-    word-wrap: break-word;
+    font-size: 14px;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+  img {
   }
 }
 .comment_title {

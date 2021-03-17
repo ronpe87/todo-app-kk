@@ -5,10 +5,10 @@
         = board.title
       .card_detail
         = board.content
-        %div
-          %p= board.author_name
-  .dropdown
-    = image_tag 'actions.svg', class: 'board3 dropbtn'
-    .dropdown-content.mini.d1
+      %div.card_author
+        = image_tag 'Oval.png', class: 'header_avatar dropbtn'
+  .dropdown.d1
+    = image_tag 'actions.svg', class: 'dropbtn'
+    .dropdown-content.mini
       = link_to '編集する', edit_board_path(board)
       = link_to '削除する', board_path(board), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？' }
