@@ -1,0 +1,19 @@
+{
+  "name": "todo-app-kk",
+  "description": "This is todoapp",
+  "keywords": [],
+  "website": "",
+  "repository": "https://github.com/ronpe87/todo-app-kk",
+  "env": {},
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
